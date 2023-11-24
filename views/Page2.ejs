@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<%- include('./partials/head.ejs') %>
+
+<body class="container-fluid text-center" style="background-color: black;">
+
+	<div class="container-fluid text-center" style= 'margin-top: 25%;'>
+		<button id="button1" onmouseover ="document.getElementById('button1').style.borderRadius  = '30px'; document.getElementById('button1').style.boxShadow = '10px 10px 50px 10px white'  " , onmouseleave="document.getElementById('button1').style.borderRadius  = '0px'; document.getElementById('button1').style.boxShadow = 'None'"   onclick="fn1()" type="button" style="font-family: fantasy; font-size:30px" >my project</button>
+		<!-- <p style="font-size: 60px; display: inline; margin-left: 5%; ">|</p> -->
+		<button id="button2" onmouseover ="document.getElementById('button2').style.borderRadius  = '30px'; document.getElementById('button2').style.boxShadow = '10px 10px 50px 10px white'" , onmouseleave="document.getElementById('button2').style.borderRadius  = '0px'; document.getElementById('button2').style.boxShadow = 'None';"  type="button" onclick="fn2()"  style=" font-family: fantasy; font-size:30px; margin-left: 5%;">my profile</button>
+			<button id="button3" onmouseover ="document.getElementById('button3').style.borderRadius  = '30px'; document.getElementById('button3').style.boxShadow = '10px 10px 50px 10px white'" , onmouseleave="document.getElementById('button3').style.borderRadius  = '0px'; document.getElementById('button3').style.boxShadow = 'None'"  type="button" onclick="fn3()"  style=" font-family: fantasy; font-size:30px; margin-left: 5%;">contact me</button>
+	</div>
+
+</body>
+	
+<!-- 	<div>
+		<p>all content</p>
+
+		<%= snipet %>
+
+	</div>
+ -->
+	<script>
+		const fn1 = ()=>{
+			window.location = 'mpr';
+		}
+
+		const fn2 = ()=>{
+			window.location = 'mp';
+		}
+		const fn3 = ()=>{
+			window.location = 'contactme';
+		}
+	</script>
+
+</html>

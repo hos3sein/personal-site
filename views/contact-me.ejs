@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs') %>
+
+	<style type="text/css">
+		
+		#insta{
+			width: 80px;
+			height: 80px;
+			margin-left: 5%;
+			border-radius: 30%;
+		}
+
+		#git{
+			border-radius: 30%;
+			width: 80px;
+			height: 80px;
+			margin-left: 5%;
+		}
+
+		#telegram{
+			border-radius: 30%;
+			width: 80px;
+			height: 80px;
+			margin-left: 5%;
+		}
+
+		#twitter{
+			border-radius: 30%;
+			width: 80px;
+			height: 80px;
+			margin-left: 5%;
+		}	
+
+
+		#pic{
+			margin-top: 10%;
+			/* margin-left: 28%; */
+		}
+
+		#box{
+			margin-top: 5%;
+			margin-left: 30%;
+/*			width: 250px;*/
+		}
+
+		#box1{
+			width: 250px;
+			height: 20px;
+			margin-top: 2%;
+			display: block;
+		}
+		#box2{
+			width: 250px;
+			height: 20px;
+			margin-top: 2%;
+			display: block;
+		}
+		#box3{
+			width: 250px;
+			height: 20px;
+			margin-top: 2%;
+			display: block;
+		}
+
+		#box4{
+			width: 250px;
+			height: 150px;
+			margin-top: 2%;
+			display: block;
+		}
+		#button{
+			width: 80px;
+			height: 30px;
+			margin-top: 2%;
+			display: block;
+		}
+
+	</style>
+<body>
+
+	<div class='container-fluid text-center' id="box">
+		<form  action="/blog" method="post">
+		<input type="text" id="box1" placeholder="first name:" name="firstname">
+		<input type="text" id="box2" placeholder="last name:" name="lastname">
+		<input type="text" id="box3" placeholder="email:" name="email">
+		<!-- <input type="text" id="box4" placeholder=" your idea:"> -->
+		<textarea id="box4" placeholder="idea" name="ideas">  </textarea>
+		<button id="button" onclick="fn()">submit</button>
+		</form>
+
+	</div>
+
+
+	<div class="container-fluid text-center" id="pic">
+		<!-- instagram -->
+
+		<img id="insta" onmouseover="fn2(id)" onmouseleave=" fn3(id) " src=" instagram2.png">
+		<!-- telegram -->
+		<img id="telegram" onmouseover="fn2(id)"  onmouseleave=" fn3(id) " src="telegra.png">
+		<!-- github -->
+		<img id="git" onmouseover="fn2(id)"  onmouseleave=" fn3(id) " src="images.png">
+		<!-- twiter -->
+		<img id="twitter" onmouseover="fn2(id)"  onmouseleave=" fn3(id) " src="twitter.png">
+	</div>
+
+
+
+	<script type="text/javascript">
+		const fn = ()=>{
+			const v = document.getElementById('box1')
+			// console.log(v.value)
+			window.location = 'save'
+		}
+
+		const fn2 = (id)=>{
+			const v2 = document.getElementById(id)
+			v2.style.boxShadow = "5px 10px 40px 10px blue";
+		}
+
+		const fn3 = (id)=>{
+			const v3 = document.getElementById(id)
+			v3.style.boxShadow='None'
+		}
+
+	</script>
+</body>
+</html>

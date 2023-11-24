@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoos": "^0.0.1-security",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1",
+    "punycode": "^2.3.1",
+    "sf": "^0.2.0"
+  }
+}

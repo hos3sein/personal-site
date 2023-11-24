@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head.ejs') %>
+
+
+
+
+<body id="bb" style="background-color: black;">
+
+
+	<!-- <% const name = 'hossein' %> -->
+
+	<div class="container-fluid">
+		<!-- <%= name %> -->
+
+
+
+		<!-- <div>
+			<img src="">
+		</div> -->
+		<div  class="container-fluid text-center" style="margin-top: 15%;">
+		<h1 style="font-family: cursive ; color: white;">hello , im hossein welcom to my site</h1>
+		<button onclick="fn()" onmouseover ="document.getElementById('button').style.borderRadius  = '25px';" , onmouseleave="document.getElementById('button').style.borderRadius  = '0px';" , id="button" type="button" style=" width: 300px;  margin-top: 5%; font-size: 50px; font-family: cursive; ">enter</button>
+		</div>
+	</div>
+	
+	
+</body>
+
+<script type="text/javascript">
+
+
+	const button = document.getElementById('button')
+
+const fn = ()=>{
+	// console.log('ok')
+	window.location = 'gpage2';
+	// document.getElementById('button').style.border-radius = '50px';
+}
+
+</script>
+</html>
+
